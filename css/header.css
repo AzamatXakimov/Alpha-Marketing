@@ -1,0 +1,376 @@
+.pagecrm_site-header {
+    padding-top: 16px;
+    padding-bottom: 22px;
+}
+
+.pagecrm_header-top {
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pagecrm_header-logolink {
+    display: inline-block;
+}
+.pagecrm_header-logo {
+    display: inline-block;
+    width: 101.56px;
+    height: 16.03px;
+}
+.pagecrm_header-nav {
+    display: none;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.pagecrm_header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.pagecrm_header-item {
+    position: relative;
+    margin-right: 15px;
+}
+.pagecrm_header-link {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+}
+.pagecrm_header-link.selected {
+    color: #e9deff;
+    text-shadow: 0px 0px 10px #fff;
+}
+.pagecrm_header-link:hover {
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 20px #D795FF, 0px 0px 4px #D795FF;
+}
+.pagecrm_header-list-lvl2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 5px;
+    list-style: none;
+    background-color: rgba(29, 1, 65, 0.3);
+    border-radius: 0px 0px 10px 10px;
+}
+.pagecrm_header-link:hover ~ .pagecrm_header-list-lvl2 {
+    display: block;
+}
+.pagecrm_header-list-lvl2:hover {
+    display: block;
+}
+
+.pagecrm_header-item-lvl2 {
+    position: relative;
+}
+
+.pagecrm_header-link-lvl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 9px 10px;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 10px;
+    text-align: left;
+    white-space: nowrap;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+.pagecrm_header-link-lvl.selected {
+    text-shadow: 0px 0px 10px #fff;
+}
+.pagecrm_header-link-lvl:hover {
+    text-shadow: 0px 0px 10px var(--main-text-color);
+    text-decoration: underline;
+    transition: text-shadow 0.3s ease, text-decoration 0.3s ease;
+}
+
+.pagecrm_header-list-lvl3 {
+    position: absolute;
+    top: calc(0% - 48%);
+    left: 100%;
+    z-index: 12;
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    list-style: none;
+    background-color: rgba(29, 1, 65, 0.3);
+    border-radius: 0px 10px 10px 0px;
+}
+.pagecrm_header-link-lvl.more::after{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    background-image: url("../images/navListArrow.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+.pagecrm_header-link-lvl.more:hover ~ .pagecrm_header-list-lvl3{
+    display: block;
+}
+.pagecrm_header-list-lvl3:hover {
+    display: block;
+} 
+
+.pagecrm_header-item-lvl3 {
+}
+
+.pagecrm_header-search-btn {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("../images/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pagecrm_header-btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagecrm_header-tel-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: text-shadow 0.3s ease;
+}
+.pagecrm_header-tel-link::before {
+    display: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: url("../images/phone-fill.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+.pagecrm_header-tel-link:hover {
+    text-shadow: 0px 0px 20px #d795ff, 0px 0px 4px #d795ff;
+}
+.pagecrm_header-btn {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 212px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+
+
+.pagecrm_header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.pagecrm_header-burger {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-right: 17px;
+    background-color: transparent;
+    background-image: url("../images/burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+.pagecrm_header-bottom-form {
+    display: flex;
+    align-items: center;
+    max-width: 516px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    border-radius: 420px;
+    border: 1px solid #fff;
+    background: linear-gradient(180.00deg, rgba(46, 51, 90, 0.3),rgba(28, 27, 51, 0.3) 100%);
+}
+.pagecrm_header-form-btn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/search-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.pagecrm_header-bottom-inp {
+    display: block;
+    /* height: 18px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--main-text-color);
+}
+.pagecrm_header-bottom-inp:focus {
+    outline: none;
+    box-shadow: none;  
+}
+
+
+
+/* 4.5.Адаптация:
+Выполнить верную адаптацию страницы на всех ширинах, указанных ниже:
+320 – 640 px
+640 – 980 px
+980 – 1400 px
+1400 – 1600 px
+1600 – большее px */
+
+@media only screen and (min-width: 640px) {
+    .pagecrm_site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 8;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        backdrop-filter: blur(100px);
+        background-color: rgba(29, 1, 65, 0.3);
+    }
+    .pagecrm_header-logo {
+        display: inline-block;
+        width: 180px;
+        height: 32px;
+    }
+    
+    .pagecrm_header-nav {
+        display: flex;
+    }
+    
+    .pagecrm_header-tel-link {
+        display: none;
+    }
+    
+    .pagecrm_header-btn {
+        display: flex;
+    }
+
+    .pagecrm_header-bottom {
+        display: none;
+    }
+    
+}
+@media only screen and (min-width: 980px) {
+    .pagecrm_header-logo {
+        display: inline-block;
+        width: 221.76px;
+        height: 35px;
+    }
+
+    .pagecrm_header-item {
+        margin-right: 24px;
+    }
+
+    .pagecrm_header-link {
+        font-size: 20px;
+    }
+
+    .pagecrm_header-list-lvl2 {
+        width: 290px;
+        padding-left: 12px;
+    }
+
+    .pagecrm_header-link-lvl {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .pagecrm_header-link-lvl.more::after{
+        width: 30px;
+        height: 30px;
+    }
+
+    .pagecrm_header-btn {
+        max-width: 230px;
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .pagecrm_header-btn::after {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-left: 7px;
+        background-image: url("../images/button-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        content: "";
+    }
+
+}
+@media only screen and (min-width: 1400px) {
+    .pagecrm_header-tel-link {
+        display: inline-flex;
+        margin-right: 32px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .pagecrm_header-tel-link::before {
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 1600px) {
+
+}
